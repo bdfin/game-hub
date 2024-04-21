@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import apiClient from "../services/api-client";
+import apiClient from "../services/apiClient";
 import { AxiosRequestConfig, CanceledError } from "axios";
 
-interface GetResponse<T> {
+export interface GetResponse<T> {
   count: number;
   results: T[];
 }
