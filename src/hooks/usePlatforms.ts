@@ -15,6 +15,6 @@ export default function usePlatforms() {
     queryKey: ["platforms"],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000,
-    initialData: { count: platforms.length, next: 1, results: platforms },
+    initialData: platforms,
   });
 }
